@@ -8,7 +8,7 @@ body {
     font-family: "Poppins", Arial, sans-serif;
     background: linear-gradient(135deg, #eef3f6, #f8fafc);
     color: #1f2933;
-    line-height: 1.85;
+    line-height: 1.9;
     display: flex;
     justify-content: center;
     padding: 50px 20px;
@@ -23,48 +23,41 @@ body {
     overflow: hidden;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 
 .header {
     text-align: center;
     padding: 50px 25px;
-    background: linear-gradient(135deg, #1d8fa3, #48b1bf); /* AZUL MAIS CLARO */
+    background: linear-gradient(135deg, #2fa4b8, #66c7d4); /* AZUL MAIS CLARO DE VERDADE */
     color: #ffffff;
+}
+
+.header * {
+    color: #ffffff !important; /* força tudo ficar branco */
 }
 
 .header img {
-    width: 160px;
-    height: 160px;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center 15%;
+    object-position: center; /* evita cortar testa */
     border: 4px solid #ffffff;
     margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.header h1 {
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #ffffff;
-}
-
-.header p {
-    font-size: 1rem;
-    margin: 6px 0;
-    color: #ffffff;
-    opacity: 1;
-}
-
-/* MAIN */
+/* ================= MAIN ================= */
 
 main {
-    padding: 40px 40px 45px 40px;
+    padding: 45px 40px;
 }
 
 h2 {
     font-size: 1.3rem;
-    color: #1d8fa3; /* combinando com o novo azul */
+    color: #2fa4b8;
     margin-top: 45px;
     margin-bottom: 20px;
     padding-bottom: 8px;
@@ -74,28 +67,28 @@ h2 {
 
 h3 {
     font-size: 1.05rem;
-    margin-top: 22px;
-    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-bottom: 12px;
     color: #374151;
     font-weight: 600;
 }
 
 p {
     font-size: 0.95rem;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     color: #374151;
 }
 
 ul {
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     padding-left: 0;
 }
 
 ul li {
     position: relative;
-    padding-left: 20px;
-    margin-bottom: 10px;
+    padding-left: 22px;
+    margin-bottom: 12px;
     font-size: 0.95rem;
     color: #374151;
 }
@@ -104,7 +97,7 @@ ul li::before {
     content: "•";
     position: absolute;
     left: 0;
-    color: #48b1bf;
+    color: #2fa4b8;
     font-weight: bold;
 }
 
@@ -113,7 +106,7 @@ ul ul {
     padding-left: 18px;
 }
 
-/* BUTTON */
+/* ================= BOTÃO ================= */
 
 .button {
     text-align: center;
@@ -121,7 +114,7 @@ ul ul {
 }
 
 #btn-print {
-    background: #1d8fa3;
+    background: #2fa4b8;
     color: #ffffff;
     border: none;
     padding: 12px 28px;
@@ -132,13 +125,12 @@ ul ul {
 }
 
 #btn-print:hover {
-    background: #48b1bf;
+    background: #66c7d4;
 }
 
-/* PRINT */
+/* ================= PRINT ================= */
 
 @media print {
-
     body {
         background: #ffffff;
         padding: 0;
@@ -154,13 +146,13 @@ ul ul {
     }
 
     .header {
-        background: #1d8fa3 !important;
+        background: #2fa4b8 !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
 }
 
-/* MOBILE */
+/* ================= MOBILE ================= */
 
 @media (max-width: 600px) {
 
@@ -169,12 +161,12 @@ ul ul {
     }
 
     main {
-        padding: 25px 20px;
+        padding: 30px 20px;
     }
 
     .header img {
-        width: 120px;
-        height: 120px;
+        width: 130px;
+        height: 130px;
     }
 
     .header h1 {
