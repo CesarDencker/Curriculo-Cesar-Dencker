@@ -20,9 +20,8 @@ body {
     overflow: hidden;
 }
 
-/* TOPO DO CURRÍCULO */
 .header {
-    background: #3a3a3a; /* CINZA ESCURO PROFISSIONAL */
+    background: #0097a7; 
     padding: 30px;
     display: flex;
     align-items: center;
