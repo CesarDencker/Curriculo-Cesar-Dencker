@@ -28,7 +28,7 @@ body {
 .header {
     text-align: center;
     padding: 50px 25px;
-    background: linear-gradient(135deg, #005f73, #0a9396);
+    background: linear-gradient(135deg, #1d8fa3, #48b1bf); /* AZUL MAIS CLARO */
     color: #ffffff;
 }
 
@@ -37,7 +37,7 @@ body {
     height: 160px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center 15%; /* Evita cortar a testa */
+    object-position: center 15%;
     border: 4px solid #ffffff;
     margin-bottom: 20px;
 }
@@ -46,15 +46,17 @@ body {
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 10px;
+    color: #ffffff;
 }
 
 .header p {
     font-size: 1rem;
     margin: 6px 0;
-    opacity: 0.95;
+    color: #ffffff;
+    opacity: 1;
 }
 
-/* MAIN CONTENT */
+/* MAIN */
 
 main {
     padding: 40px 40px 45px 40px;
@@ -62,7 +64,7 @@ main {
 
 h2 {
     font-size: 1.3rem;
-    color: #005f73;
+    color: #1d8fa3; /* combinando com o novo azul */
     margin-top: 45px;
     margin-bottom: 20px;
     padding-bottom: 8px;
@@ -102,7 +104,7 @@ ul li::before {
     content: "•";
     position: absolute;
     left: 0;
-    color: #0a9396;
+    color: #48b1bf;
     font-weight: bold;
 }
 
@@ -119,18 +121,18 @@ ul ul {
 }
 
 #btn-print {
-    background: #005f73;
+    background: #1d8fa3;
     color: #ffffff;
     border: none;
     padding: 12px 28px;
     border-radius: 6px;
     font-size: 0.95rem;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
 #btn-print:hover {
-    background: #0a9396;
+    background: #48b1bf;
 }
 
 /* PRINT */
@@ -152,13 +154,9 @@ ul ul {
     }
 
     .header {
-        background: #005f73 !important;
+        background: #1d8fa3 !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
-    }
-
-    h2 {
-        border-bottom: 1px solid #cccccc;
     }
 }
 
