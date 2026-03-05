@@ -24,47 +24,80 @@ body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     overflow: hidden;
     padding-bottom: 30px;
+    transition: 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
 
 .header {
     text-align: center;
     padding: 40px 20px;
+
+    /* ALTERAÇÃO APENAS AQUI */
     background: linear-gradient(135deg, #cfd4da, #e5e8eb);
+
     color: #ffffff;
 }
 
 .header img {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center top;
-    border: 4px solid #ffffff;
-    margin-bottom: 20px;
+    object-position: center 30%;
+    border: 4px solid white;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.header img:hover {
+    transform: scale(1.05);
 }
 
 .header h1 {
-    font-size: 2.3em;
-    margin-bottom: 10px;
+    font-size: 2.4em;
+    margin-bottom: 5px;
     font-weight: 700;
     color: #ffffff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
 }
 
 .header p {
-    margin: 6px 0;
+    margin: 5px 0;
     font-size: 1em;
     color: #ffffff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+.header a {
+    margin: 0 8px;
+    display: inline-block;
+    transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.header a img {
+    width: 25px;
+    height: 25px;
+}
+
+.header a:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
 }
 
 main {
-    padding: 0 28px;
+    padding: 0 25px;
 }
 
 h2 {
     color: #006d77;
     border-left: 5px solid #83c5be;
     padding-left: 10px;
-    margin: 35px 0 15px 0;
+    margin: 35px 0 12px 0;
     font-size: 1.4em;
 }
 
@@ -76,17 +109,17 @@ h3 {
 p, li {
     font-size: 1em;
     color: #333;
-    margin: 8px 0;
+    margin: 10px 0;
 }
 
 ul {
     list-style: none;
-    margin: 10px 0;
+    margin: 12px 0;
     padding-left: 0;
 }
 
 ul ul {
-    margin-top: 8px;
+    margin-top: 10px;
     padding-left: 20px;
 }
 
@@ -98,16 +131,21 @@ ul li::before {
     width: 16px;
 }
 
+[data-share-badge-id] {
+    margin: 10px;
+    display: inline-block;
+}
+
 .button {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 35px;
 }
 
 #btn-print {
     background-color: #006d77;
     color: white;
     border: none;
-    padding: 12px 26px;
+    padding: 12px 25px;
     border-radius: 6px;
     font-size: 1em;
     cursor: pointer;
@@ -136,10 +174,15 @@ ul li::before {
     }
 
     .header {
-        background: #1f7f8b !important;
+        background: #cfd4da !important;
         color: white !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 
+    .header h1 {
+        color: #ffffff !important;
+    }
 }
 
 @media (max-width: 600px) {
@@ -150,7 +193,7 @@ ul li::before {
     }
 
     .header h1 {
-        font-size: 1.9em;
+        font-size: 1.8em;
     }
 
     h2 {
@@ -160,5 +203,4 @@ ul li::before {
     p, li {
         font-size: 0.95em;
     }
-
 }
